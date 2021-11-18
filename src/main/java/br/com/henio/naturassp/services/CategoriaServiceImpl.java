@@ -1,12 +1,12 @@
 package br.com.henio.naturassp.services;
 
-import br.com.henio.naturassp.dao.CategoriaDAO;
-import br.com.henio.naturassp.model.Categoria;
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.sql.SQLException;
-import java.util.ArrayList;
+import br.com.henio.naturassp.dao.CategoriaDAO;
+import br.com.henio.naturassp.model.Categoria;
 
 @Component
 public class CategoriaServiceImpl implements ICategoriaService{
