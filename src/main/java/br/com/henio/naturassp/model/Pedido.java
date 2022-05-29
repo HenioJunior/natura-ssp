@@ -21,7 +21,7 @@ public class Pedido {
     @Column(name = "valorTotal")
     private Double valorTotal;
 
-    @Column(name = "observacoes")
+    @Column(name = "observacoes", length = 500)
     private String observacoes;
 
     @Column(name = "status")
