@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { DestaquesComponent } from './componentes/destaques/destaques.component';
+import { CarrosselComponent } from './componentes/carrossel/carrossel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     RodapeComponent,
-    DestaquesComponent
+    DestaquesComponent,
+    CarrosselComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Produto } from 'src/app/model/Produto';
 import { ProdutoService } from 'src/app/servicos/produto.service';
 
 @Component({
@@ -7,6 +8,7 @@ import { ProdutoService } from 'src/app/servicos/produto.service';
   styleUrls: ['./destaques.component.css']
 })
 export class DestaquesComponent implements OnInit {
+  public lista: Produto[];
 
   //preciso injetar o serviço que busca o produto
   constructor(private service: ProdutoService) {
@@ -15,6 +17,6 @@ export class DestaquesComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.getAllProdutos()
-      .subscribe(res => console.log(res), err => console.log(err));
+      .subscribe((res: Produto[]) => this.lista = res, err => console.log(err));
   }
 }
