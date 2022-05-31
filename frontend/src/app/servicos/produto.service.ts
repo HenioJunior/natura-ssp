@@ -12,4 +12,8 @@ export class ProdutoService {
     console.log("Estou no PRODUTOSERVICE - Entrei em contato com o Backend")
     return this.http.get("http://localhost:8080/produto");
   }
+
+  public getProdutoPeloId(id: number) {
+    return this.http.get("http://localhost:8080/produto/"+id);
+  }
 }
